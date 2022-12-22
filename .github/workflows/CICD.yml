@@ -12,6 +12,10 @@ jobs:
   Stop-Containers:
     runs-on: self-hosted
     steps:
+    - name: where am i
+      run: |
+        pwd
+        ls
     - uses: actions/checkout@v3
     #遠端部署
     - name: where am i
