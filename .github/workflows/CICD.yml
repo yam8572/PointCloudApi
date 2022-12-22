@@ -12,15 +12,19 @@ jobs:
   Stop-Containers:
     runs-on: self-hosted
     steps:
-#     - uses: actions/checkout@v2
-    # 遠端部署
-#     - name: stop nginx container
-#       run: 
-#         docker container stop $(docker container ls -q --filter name=nginx_container)
-#     - name: stop flask container
-#       if: always()
-#       run:
-#         docker container stop $(docker container ls -q --filter name=flask_container)
+    - uses: actions/checkout@v3
+    #遠端部署
+    - name: where am i
+      run: |
+        pwd
+        ls
+    - name: stop nginx container
+      run: 
+        docker container stop $(docker container ls -q --filter name=nginx_container)
+    - name: stop flask container
+      if: always()
+      run:
+        docker container stop $(docker container ls -q --filter name=flask_container)
     - name: prune containers
       if: always()
       run:
