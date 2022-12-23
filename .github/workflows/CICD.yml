@@ -17,7 +17,7 @@ jobs:
       run: |
         pwd
         ls
-    - uses: actions/checkout@v2
+    # - uses: actions/checkout@v2
     #遠端部署
     - name: where am i
       run: |
@@ -51,20 +51,20 @@ jobs:
         mkdir code
         cd code
         pwd 
-        git clone https://github.com/yam8572/PointCloudApi.git
         cd PointCloudApi
         pwd
     
     - name: docker compose up 
       run:
-        # -d: 在後台執行該服務
-        docker-compose up -d --build
-        
-    - name: remove project folder
-      run: |
-        cd ..
         pwd
-        ls
-        rm -force code
+        # -d: 在後台執行該服務
+        # docker-compose up -d --build
+        
+    # - name: remove project folder
+    #   run: |
+    #     cd ..
+    #     pwd
+    #     ls
+    #     rm -force code
     
 # if: always()>> always execute, and returns true, even when canceled.
