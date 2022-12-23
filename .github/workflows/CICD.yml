@@ -43,13 +43,17 @@ jobs:
         pwd 
       # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\
       
+      - name: route to project
+      run:
+        cd ../PointCloudApi
+    
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
         
-    - name: route to project
-      run:
-        cd ./PointCloudApi
+    # - name: route to project
+    #   run:
+    #     cd ../code
         
     - name: where am I
       run:
