@@ -46,8 +46,7 @@ jobs:
     
     - name: create code dir
       run: |
-        pwd
-        cd ..            
+        pwd            
         mkdir code
         cd code
         pwd 
