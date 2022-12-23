@@ -13,6 +13,8 @@ jobs:
   Stop-Containers:
     runs-on: self-hosted
     steps:
+    - name: set working dir
+      working-directory: ../code
     - name: where am i
       run: |
         pwd
