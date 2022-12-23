@@ -47,9 +47,9 @@ jobs:
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
         
-    # - name: route to project
-    #   run:
-    #     cd ../code
+    - name: route to project
+      run:
+        cd ../code
         
     - name: where am I
       run:
