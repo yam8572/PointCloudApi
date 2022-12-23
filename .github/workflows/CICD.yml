@@ -55,8 +55,9 @@ jobs:
       run: |
         cd ..
         pwd 
-        rm -force PointCloudApi
         ls
+    #    rm -force PointCloudApi
+    #    ls
         
     # - name: remove project folder
     #   run: |
