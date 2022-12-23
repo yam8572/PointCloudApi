@@ -16,7 +16,7 @@ jobs:
       run: |
         pwd
         ls
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     #遠端部署
     - name: where am i
       run: |
@@ -47,13 +47,13 @@ jobs:
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
         
-#     - name: route to project
-#       run:
-#         cd ./PointCloudApi
+    - name: route to project
+      run:
+        cd ./PointCloudApi
         
-#     - name: where am I
-#       run:
-#         pwd 
+    - name: where am I
+      run:
+        pwd 
     
     - name: docker compose up 
       run:
