@@ -40,25 +40,23 @@ jobs:
     if: always()
     steps:
     - uses: actions/checkout@v2
+    # auto git clone https://github.com/yam8572/PointCloudApi.git
     - name: where am I
       run:
         pwd 
       # defaut: C:\www\actions-runner\_work\PointCloudApi\PointCloudApi
-    
-    - name: create code dir and git clone code
-      run: |
-        pwd            
-        mkdir code
-        cd code
-        pwd 
-        cd PointCloudApi
-        pwd
-    
+
     - name: docker compose up 
       run:
-        pwd
         # -d: 在後台執行該服務
-        # docker-compose up -d --build
+        docker-compose up -d --build
+    
+    - name: remove project after docker build complete
+      run: |
+        cd ..
+        pwd 
+        rm -force PointCloudApi
+        ls
         
     # - name: remove project folder
     #   run: |
