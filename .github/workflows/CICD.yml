@@ -13,10 +13,6 @@ jobs:
   Stop-Containers:
     runs-on: self-hosted
     steps:
-    - name: where am i
-      run: |
-        pwd
-        ls
     # - uses: actions/checkout@v2
     #遠端部署
     - name: where am i
@@ -41,6 +37,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     # auto git clone https://github.com/yam8572/PointCloudApi.git
+    
     - name: where am I
       run:
         pwd 
@@ -50,20 +47,6 @@ jobs:
       run:
         # -d: 在後台執行該服務
         docker-compose up -d --build
-    
-    - name: remove project after docker build complete
-      run: |
-        cd ..
-        pwd 
-        ls
-    #    rm -force PointCloudApi
-    #    ls
-        
-    # - name: remove project folder
-    #   run: |
-    #     cd ..
-    #     pwd
-    #     ls
-    #     rm -force code
+  
     
 # if: always()>> always execute, and returns true, even when canceled.
