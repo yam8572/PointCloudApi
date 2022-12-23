@@ -12,7 +12,6 @@ jobs:
   
   Stop-Containers:
     runs-on: self-hosted
-    permission: read-all|write-all
     steps:
     - name: where am i
       run: |
