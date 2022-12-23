@@ -23,12 +23,6 @@ jobs:
       run: |
         pwd
         ls
-    - name: Experiment
-      run: |
-        pwd            
-        mkdir hello
-        cd hello
-        pwd 
     - name: stop nginx container
       run: 
         docker container stop $(docker container ls -q --filter name=nginx_container)
@@ -49,7 +43,15 @@ jobs:
       run:
         pwd 
       # defaut: C:\www\actions-runner\_work\PointCloudApi\PointCloudApi
-      
+    
+    - name: create code dir
+      run: |
+        pwd
+        cd ..            
+        mkdir code
+        cd code
+        pwd 
+
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
