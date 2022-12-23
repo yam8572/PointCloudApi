@@ -45,21 +45,24 @@ jobs:
         pwd 
       # defaut: C:\www\actions-runner\_work\PointCloudApi\PointCloudApi
     
-    - name: create code dir
+    - name: create code dir and git clone code
       run: |
         pwd            
         mkdir code
         cd code
         pwd 
-
-    - name: clone source code
-      run:
         git clone https://github.com/yam8572/PointCloudApi.git
-        
-    - name: route to project
-      run: |
         cd ..\PointCloudApi\
         pwd
+
+    # - name: clone source code
+    #   run:
+    #     git clone https://github.com/yam8572/PointCloudApi.git
+        
+    # - name: route to project
+    #   run: |
+    #     cd ..\PointCloudApi\
+    #     pwd
     # - name: where am I
     #   run:
     #     pwd 
