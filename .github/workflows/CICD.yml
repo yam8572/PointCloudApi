@@ -24,7 +24,7 @@ jobs:
         pwd
         ls
     - name: Setup and run tests
-        working-directory: ../code
+        working-directory: ./app
     - name: stop nginx container
       run: 
         docker container stop $(docker container ls -q --filter name=nginx_container)
