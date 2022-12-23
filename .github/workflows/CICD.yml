@@ -41,7 +41,7 @@ jobs:
     - name: where am I
       run:
         pwd 
-      # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\
+      # defaut: C:\www\actions-runner\_work\PointCloudApi\PointCloudApi
       
     - name: clone source code
       run:
@@ -49,7 +49,7 @@ jobs:
         
     - name: route to project
       run:
-        cd ../code
+        cd ..\PointCloudApi\
         
     - name: where am I
       run:
