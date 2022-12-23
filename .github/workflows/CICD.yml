@@ -43,10 +43,6 @@ jobs:
         pwd 
       # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\
       
-      - name: route to project
-      run:
-        cd ../PointCloudApi
-    
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
@@ -64,8 +60,8 @@ jobs:
         # -d: 在後台執行該服務
         docker-compose up -d --build
         
-    - name: remove project folder
-      run:
-        rm -force PointCloudApi
+    # - name: remove project folder
+    #   run:
+    #     rm -force PointCloudApi
     
 # if: always()>> always execute, and returns true, even when canceled.
