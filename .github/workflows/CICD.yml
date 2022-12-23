@@ -52,7 +52,7 @@ jobs:
         cd code
         pwd 
         git clone https://github.com/yam8572/PointCloudApi.git
-        cd ..\PointCloudApi\
+        cd PointCloudApi
         pwd
 
     # - name: clone source code
