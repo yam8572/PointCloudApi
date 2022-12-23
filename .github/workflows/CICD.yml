@@ -23,8 +23,12 @@ jobs:
       run: |
         pwd
         ls
-    - name: Setup and run tests
-        working-directory: ./app
+    - name: Experiment
+      run: |
+        pwd            
+        mkdir hello
+        cd hello
+        pwd 
     - name: stop nginx container
       run: 
         docker container stop $(docker container ls -q --filter name=nginx_container)
