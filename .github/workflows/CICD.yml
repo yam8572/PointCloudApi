@@ -63,6 +63,7 @@ jobs:
     - name: remove project folder
       run: |
         cd ..
+        cd ..
         rm -force code
     
 # if: always()>> always execute, and returns true, even when canceled.
