@@ -39,6 +39,7 @@ jobs:
     needs: Stop-Containers
     if: always()
     steps:
+    - uses: actions/checkout@v2
     - name: where am I
       run:
         pwd 
