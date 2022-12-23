@@ -7,12 +7,12 @@ on:
   pull_request:
     branches: [ main ]
 
-permission: read-all|write-all
-
 # 執行一項或多項任務
 jobs: 
+  
   Stop-Containers:
     runs-on: self-hosted
+    permission: read-all|write-all
     steps:
     - name: where am i
       run: |
