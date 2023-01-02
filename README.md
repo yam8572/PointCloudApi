@@ -1,5 +1,10 @@
 # Point Cloud Api
 點雲後端
+報告影片：
+[期中](https://youtu.be/n81aO_jylDk)
+[期末](https://youtu.be/q7deKLkvkjs)
+[github Action Demo](https://youtu.be/_CDde8hm264)
+[Flask後端網頁Demo](https://youtu.be/j32DFhC81ho)
 
 # git push  
 1.新建本地數據庫（Local Repository 只需要新建一次就好）<br>
