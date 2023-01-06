@@ -3,7 +3,7 @@ Flask-HTTPAuth
 Flasgger
 uWSGI
 Werkzeug
-numpy==1.21.6
+numpy==1.19.2
 open3d==0.15.2
 addict==2.4.0
 anyio
