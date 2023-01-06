@@ -100,7 +100,7 @@ tomlkit
 tornado==6.1
 tqdm==4.63.1
 traitlets==5.1.1
-typing-extensions==3.7.5
+typing-extensions==3.7.4.3
 urllib3==1.26.9
 wcwidth==0.2.5
 webencodings==0.5.1
