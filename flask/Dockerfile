@@ -1,5 +1,6 @@
 # FROM：基底映像檔
-FROM python:3.8
+# FROM python:3.8
+FROM python:3.9-slim
 
 # WORKDI：建立 working directory
 WORKDIR /app
